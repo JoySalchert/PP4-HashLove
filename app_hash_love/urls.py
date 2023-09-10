@@ -16,8 +16,8 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 from app_hash_love import urls as app_urls
+from .views import login_view
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('', include('app_hash_love.urls')),
+    path('login', login_view),
 ]
