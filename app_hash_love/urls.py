@@ -16,8 +16,10 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 from app_hash_love import urls as app_urls
-from .views import login_view
+from .views import login_view, register_view, home_view
 
 urlpatterns = [
-    path('login', login_view),
+    path('login', login_view, name='login'),
+    path('register', register_view, name='register'),
+    path('home', home_view, name='home'),
 ]
