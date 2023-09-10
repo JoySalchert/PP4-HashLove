@@ -88,10 +88,8 @@ WSGI_APPLICATION = 'hashlove.wsgi.application'
 #    }
 #}
 
-print(os.environ.get("DATABASE_URL"))
-
 DATABASES = {
-  'default': dj_database_url.parse(os.environ.get("DATABASE_URL"))
+  'default': dj_database_url.parse('postgres://xgtlhrkg:JONCBDoF9vi0OmOXqjsUyEQbMEa-Yn36@tai.db.elephantsql.com/xgtlhrkg')
 }
 
 # Password validation
