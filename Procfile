@@ -1,1 +1,1 @@
-web: gunicorn app_hash_love.wsgi
+web: gunicorn hashlove.wsgi
