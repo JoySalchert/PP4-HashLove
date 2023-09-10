@@ -1,9 +1,8 @@
 from django.contrib import admin
 from .models import UserInfo
-from django_summernote.admin import SummernoteModelAdmin
 
 @admin.register(UserInfo)
-class UserInfoAdmin(SummernoteModelAdmin):
-    summernote_fields = '__all__'
+class UserInfoAdmin(admin.ModelAdmin):
+    pass
 
 # Register your models here.
