@@ -1,1 +1,1 @@
-web: gunicorn PP4-HASHLOVE.wsgi
+web: gunicorn hash-love.wsgi
